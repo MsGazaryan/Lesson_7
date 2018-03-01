@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	background-color: navy;
+}
+
+.outerButton{
+	width: 100%;
+	height: 400px;
+	background-color: lightblue;
+
+}
+
+.button{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	background-color: steelblue;
+	margin: 100px auto;
+	transition: all  1s;
+	/*transition: all 1s; - замедление изменений. если в классе, то он и туда и обратно отходит одинаково, а если в button:hover, то после убирания мышки сразу же возвращается на свое место*/
+}
+
+.outerButton:hover{
+	background-color: white;
+} 
+
+.outerButton:hover .button{
+/*	width: 150px;
+	height: 100px;
+	line-height: 100px;
+	background-color: purple;
+	transition: all 1s;*/
+
+	/*transform: scale(2,2); /*scaleX(n), scaleY(n), *scaleZ(n), scale(n,n,*n)*/
+	/*transform: rotateZ(-100000000deg);*/ /*rotateX, rotateY, rotateZ*/
+	/*delay - задержка*/
+	/*transform: skew(180deg); skewX(), skewY(), skewZ()*/
+	/*transform: translate(100px);*/
+	transform: rotateZ(90deg) rotateY(30deg) skew(30deg);
+	cursor: crosshair; /*pointer- пальчик, wait-загрузка, url() если скачать картинку, crosshair-прицел*/
+}
+
+.button:hover{
+	width: 150px;
+	height: 100px;
+}
